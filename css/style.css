@@ -1,0 +1,19 @@
+body{
+    background-image: url(/img/background.jpg);
+    margin: 0;
+}
+
+.text{
+    position: fixed;
+    right: 200px;
+    top: 300px;
+    font-size: 62px;
+    color: antiquewhite;
+}
+.container{
+    display: grid;
+    background-color: whitesmoke;
+    width: 65vw;
+    height: 100vh;
+
+}
