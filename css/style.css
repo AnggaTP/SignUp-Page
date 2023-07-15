@@ -1,19 +1,98 @@
+:root{
+    font-size: 16px;
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/font/Poppins-Regular.ttf);
+}
 body{
-    background-image: url(/img/background.jpg);
     margin: 0;
+    font-family: Poppins;
+    /* overflow: hidden; */
 }
 
-.text{
-    position: fixed;
-    right: 200px;
-    top: 300px;
-    font-size: 62px;
-    color: antiquewhite;
-}
 .container{
     display: grid;
-    background-color: whitesmoke;
-    width: 65vw;
+    grid-template-columns: 2fr 1fr;
     height: 100vh;
+}
 
+.col2{
+    background-image: url(/img/background.jpg);
+}
+
+.col1{
+    margin: 50px;
+}
+
+.title{
+    font-size: 2rem;
+    height: 50px;
+    font-weight: 700;
+}
+.subtitle{
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+form{
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.form-cell{
+    padding: 10px 20px 10px 0px;
+}
+
+input{
+    height: 25px;
+    width: 250px;
+    /* background-color: aliceblue; */
+    border: none;
+    border-bottom: 2px solid limegreen;
+    border-radius: 2px;
+    font-size: 1rem;
+    padding-left: 10px;
+    color: rgb(65, 64, 64);
+}
+input:focus{
+    outline: none;
+    background-color: aliceblue;
+}
+
+.confirmtext{
+    font-size: 0.8rem;
+    color: tomato;
+}
+
+button{
+    padding: 8px 30px;
+    background-color: limegreen;
+    color: ivory;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0px 3px 5px darkgray;
+}
+
+a{
+    text-decoration: none;
+    color: limegreen;
+}
+
+.block{
+    z-index: -1;
+    position: fixed;
+    background-color: lightcyan;
+    left: 0;
+    top: 0;
+    width: 910px;
+    height: 160px;
+
+    /* height: 350px; */
+    /* top: 165px; */
+    box-shadow: 0px 1px 5px darkgray;
 }
